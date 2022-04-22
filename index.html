@@ -1,83 +1,15 @@
-<!DOCTYPE html>
 <html>
-    <style>
-        body {
-            background-color: black;
-            user-select: none;
-        }
-
-        .fade-in-text {
-            display: inline-block;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 150px;
-            color: black;
-            animation: fadeIn linear 7s;
-            -webkit-animation: fadeIn linear 7s;
-            -moz-animation: fadeIn linear 7s;
-            -o-animation: fadeIn linear 7s;
-            -ms-animation: fadeIn linear 7s;
-        }
-
-        p {
-            user-select: none;
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            animation: redglitch 725ms infinite;
-            -webkit-animation: redglitch 725ms infinites;
-            -moz-animation: redglitch 725ms infinite;
-            -o-animation: redglitch 725ms infinite;
-            -ms-animation: redglitch 725ms infinite;
-        }
-
-        @keyframes redglitch {
-            0% {text-shadow: none;}
-            10% {text-shadow: 1px 1px #3cff00;}
-            20% {text-shadow: 1px 1px #ffae00;}
-            30% {text-shadow: 1px 1px #d0ff00;}
-            40% {text-shadow: 1px 1px #9dff00;}
-            50% {text-shadow: 1px 1px #48ff00;}
-            60% {text-shadow: 1px 1px #00ffaa;}
-            70% {text-shadow: 1px 1px #002fff;}
-            80% {text-shadow: 1px 1px #5900ff;}
-            90% {text-shadow: 1px 1px rgb(162, 0, 255);}
-            100% {text-shadow: 1px 1px #ff0000;}
-        }
-
-        @keyframes fadeIn {
-            0% {opacity:0;}
-            100% {opacity:1;}
-        }
-
-        @-moz-keyframes fadeIn {
-            0% {opacity:0;}
-            100% {opacity:1;}
-        }
-
-        @-webkit-keyframes fadeIn {
-            0% {opacity:0;}
-            100% {opacity:1;}
-        }
-
-        @-o-keyframes fadeIn {
-            0% {opacity:0;}
-            100% {opacity:1;}
-        }
-
-        @-ms-keyframes fadeIn {
-            0% {opacity:0;}
-            100% {opacity:1;}
-        }
-    </style>
     <head>
-        <title>We're back soon</title>
+        <title>Violent</title>
+        <link rel="stylesheet" href="style.css">
+        
     </head>
-    <body onclick="window.location.href = 'https://discord.gg/eKYZe38sbd';">
-        <center>
-            <div class="fade-in-text">
-                <p style="color: white; font-size: 50px;">We're comming back very soon with a lot of new & amazing stuff, stay tuned and please recommend us :D</p>
-            </div>
-        </center>
+    <body>
+        <div id="particles-container"></div>
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script  src="script.js"></script>
+        <a style="font-size: 50px;" class="center">Violent</a>
+        <button onclick="window.location.href = 'https://discord.gg/eKYZe38sbd';" class="center" style="margin-top: 6rem; margin-left: -6.9rem;" >Discord Server</button>
+        <button onclick="window.location.href = 'https://www.youtube.com/channel/UCsmAJvYaZqtjwGx490kVbeg';" class="center" style="margin-left: 6.9rem; margin-top: 6rem;">Youtube Account</button>
     </body>
 </html>
